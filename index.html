@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>T&T Design & Development -- Architecture & Site Planning</title>
+  <meta name="description" content="T&T Design & Development is a Florida architecture and site planning practice. Broward County commercial, industrial, and mixed-use projects since 2002." />
+
+  <meta property="og:title" content="T&T Design & Development -- Architecture & Site Planning" />
+  <meta property="og:description" content="A Florida architecture practice delivering commercial, industrial, and mixed-use projects across Broward County since 2002." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header" id="siteHeader">
+    <div class="header-inner">
+      <a href="#top" class="brand" aria-label="T&T Design home">
+        <svg class="brand-mark" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+          <rect x="1" y="1" width="30" height="30" stroke="currentColor" stroke-width="1" fill="none"/>
+          <path d="M5 5h10v2h-4v20h-2V7H5V5zm12 0h10v2h-4v20h-2V7h-4V5z" fill="currentColor"/>
+        </svg>
+        <span class="brand-text">
+          <span class="brand-name">T&amp;T Design</span>
+          <span class="brand-sub">Architecture &amp; Planning</span>
+        </span>
+      </a>
+
+      <nav class="nav-desktop" aria-label="Primary">
+        <a href="#work">Work</a>
+        <a href="#practice">Practice</a>
+        <a href="#disciplines">Services</a>
+        <a href="#process">Process</a>
+        <a href="#credentials">Credentials</a>
+      </nav>
+
+      <a href="#contact" class="nav-cta">
+        <span>Start a project</span>
+        <span class="arrow" aria-hidden="true">↗</span>
+      </a>
+
+      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false" id="menuToggle">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <nav class="mobile-menu" id="mobileMenu" aria-label="Mobile navigation">
+      <a href="#work">Work</a>
+      <a href="#practice">Practice</a>
+      <a href="#disciplines">Services</a>
+      <a href="#process">Process</a>
+      <a href="#credentials">Credentials</a>
+      <a href="#contact">Start a project</a>
+    </nav>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="top">
+    <div class="hero-left">
+      <div class="hero-meta-top">
+        <span class="dot"></span>
+        <span class="mono">Est. 2002 &mdash; Broward County, FL</span>
+      </div>
+
+      <div>
+        <h1 class="hero-headline reveal">
+          Building
+          <em>quietly</em><br/>
+          in Broward<br/>
+          since 2002.
+        </h1>
+
+        <div class="hero-lede-block">
+          <p class="hero-quote reveal">
+            We design commercial, industrial, and mixed-use projects
+            across South Florida &mdash; close to the site, close to
+            the client, closer to the drawing.
+          </p>
+          <a href="#work" class="hero-cta reveal">
+            <span>Explore our work</span>
+            <span aria-hidden="true">→</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <div class="hero-photo hero-photo--a image-reveal">
+        <img src="images/flora-aerial.jpg" alt="Flora Fine Foods HQ aerial view, Coral Springs" />
+      </div>
+      <div class="hero-photo hero-photo--b image-reveal">
+        <img src="images/willis-rendering.jpg" alt="Willis Lease Aviation facility rendering, Coconut Creek" />
+      </div>
+
+      <a href="#case" class="featured-card reveal">
+        <div class="featured-kicker">
+          <span class="mono">Featured Project</span>
+          <span class="featured-arrow" aria-hidden="true">↗</span>
+        </div>
+        <h3 class="featured-title">Flora Fine Foods Headquarters</h3>
+        <div class="featured-meta">Coral Springs, FL &mdash; 2021</div>
+        <div class="featured-divider"></div>
+        <span class="featured-cta">View Project</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ===== MARQUEE ===== -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span class="marquee-item">Commercial Design</span>
+      <span class="marquee-item">Site Planning</span>
+      <span class="marquee-item">Industrial Architecture</span>
+      <span class="marquee-item">Aviation Facilities</span>
+      <span class="marquee-item">Broward County</span>
+      <span class="marquee-item">Since MMII</span>
+      <span class="marquee-item">Commercial Design</span>
+      <span class="marquee-item">Site Planning</span>
+      <span class="marquee-item">Industrial Architecture</span>
+      <span class="marquee-item">Aviation Facilities</span>
+      <span class="marquee-item">Broward County</span>
+      <span class="marquee-item">Since MMII</span>
+    </div>
+  </div>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="about" id="practice">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="label">The Practice &mdash; 01</span>
+        <h2 class="section-title">A studio of<br/><em>two decades</em>.</h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-kicker reveal">
+          <p class="mono">&mdash; Founded by Jerry Thomas, 2002</p>
+          <h3 style="font-size: var(--t-2xl); line-height: 0.95; font-weight: 400; letter-spacing: -0.02em;">
+            Architecture <em>as</em> discipline.
+          </h3>
+        </div>
+
+        <div class="about-body reveal">
+          <p>
+            T&amp;T Design &amp; Development has been registered as an active
+            Florida corporation since 29 April 2002 &mdash; more than two
+            decades of commercial, industrial, and mixed-use work delivered
+            across Broward County.
+          </p>
+          <p>
+            We work quietly and take on a small number of projects each year.
+            Most of our work comes from referrals &mdash; from developers,
+            owners, general contractors, and municipalities we have worked
+            with for years. Our signature project, the 75,000 square-foot
+            Flora Fine Foods headquarters, opened in 2021 in partnership with
+            Butters Construction.
+          </p>
+          <p>
+            Each engagement is led by a principal, not handed off. The drawings
+            should come from the people doing the work, and the buildings
+            should come from the drawings.
+          </p>
+
+          <div class="about-signature">
+            <span class="signature-mark">JT</span>
+            <div class="signature-meta">
+              <span class="name">Jerry Thomas</span>
+              <span class="role">Founder &amp; Principal</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== STATS ===== -->
+  <section class="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat reveal">
+          <span class="stat-value"><span data-target="24">24</span></span>
+          <span class="stat-label">Years in Practice</span>
+        </div>
+        <div class="stat reveal">
+          <span class="stat-value"><span data-target="50">50</span>+</span>
+          <span class="stat-label">Permitted Projects</span>
+        </div>
+        <div class="stat reveal">
+          <span class="stat-value">75<em>K</em></span>
+          <span class="stat-label">SF Largest Build</span>
+        </div>
+        <div class="stat reveal">
+          <span class="stat-value">1</span>
+          <span class="stat-label">County Focus</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CASE STUDY ===== -->
+  <section class="case" id="case">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="label">Signature Work &mdash; 02</span>
+        <div>
+          <h2 class="section-title">Flora Fine Foods <em>&amp;</em> Orvino Wine Imports.</h2>
+          <p class="section-lede" style="margin-top: var(--s-5)">
+            A 75,000 square-foot headquarters, distribution center, and Italian
+            marketplace on Sample Road &mdash; the firm's largest completed
+            project to date.
+          </p>
+        </div>
+      </div>
+
+      <div class="case-hero">
+        <div class="case-img image-reveal">
+          <img src="images/flora-aerial.jpg" alt="Flora Fine Foods HQ aerial, Coral Springs, FL" />
+        </div>
+
+        <div class="case-info">
+          <div class="case-info-top">
+            <span class="label">02 &mdash; Case Study</span>
+            <h3>Flora Fine Foods <em>HQ</em></h3>
+            <p>
+              Three distinct programs under one roof &mdash; corporate
+              headquarters, full distribution operation, and a public-facing
+              Italian marketplace. Each required its own circulation, security,
+              and material palette, coordinated within a single envelope.
+            </p>
+            <p>
+              Delivered in design-build collaboration with Butters Construction,
+              a partnership spanning multiple projects along the Sample Road
+              corridor.
+            </p>
+          </div>
+
+          <div>
+            <dl class="case-specs">
+              <div><dt>Location</dt><dd>12327 W Sample Rd<br/>Coral Springs, FL</dd></div>
+              <div><dt>Year</dt><dd>2021</dd></div>
+              <div><dt>Size</dt><dd>75,000 SF</dd></div>
+              <div><dt>Program</dt><dd>HQ &middot; Distribution<br/>Marketplace</dd></div>
+              <div><dt>Contractor</dt><dd>Butters Construction</dd></div>
+              <div><dt>Role</dt><dd>Architect of Record</dd></div>
+            </dl>
+
+            <a href="https://www.naiopsfl.org/flora-fine-foods-orvino-wine-imports-break-ground-on-their-new-75-000-s-f-headquarters-distribution-and-italian-marketplace-in-coral-springs-fl" target="_blank" rel="noopener" class="case-link" style="margin-top: var(--s-6)">
+              <span>Announcement &mdash; NAIOP SFL</span>
+              <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SELECTED WORK ===== -->
+  <section class="work" id="work">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="label">Selected Work &mdash; 03</span>
+        <h2 class="section-title">Projects across <em>the county</em>.</h2>
+      </div>
+
+      <div class="work-grid">
+        <a class="work-item work-item--wide" href="#contact">
+          <div class="work-image image-reveal">
+            <span class="work-number">&mdash; 001</span>
+            <img src="images/willis-rendering.jpg" alt="Willis Lease Aviation Expansion rendering" loading="lazy" />
+          </div>
+          <div class="work-body">
+            <div class="work-meta">
+              <span>2018 &middot; Coconut Creek, FL</span>
+              <span>Resolution 2018-207</span>
+            </div>
+            <h3 class="work-title">Willis Lease Aviation <em>Expansion</em></h3>
+            <p class="work-description">
+              A 24,300 SF warehouse-office expansion at 4700 Lyons Technology
+              Parkway, bringing the Coconut Creek Aviation Assets facility to
+              48,600 SF total. Approved by City Commission.
+            </p>
+            <div class="work-item-footer">
+              <div class="work-tags">
+                <span class="work-tag">Aviation</span>
+                <span class="work-tag">Industrial</span>
+              </div>
+              <span class="work-arrow">View <span aria-hidden="true">→</span></span>
+            </div>
+          </div>
+        </a>
+
+        <a class="work-item" href="#contact">
+          <div class="work-image image-reveal">
+            <span class="work-number">&mdash; 002</span>
+            <img src="images/willis-siteplan.jpg" alt="Willis Lease site plan drawing" loading="lazy" />
+          </div>
+          <div class="work-body">
+            <div class="work-meta">
+              <span>2018 Documents</span>
+              <span>T&amp;T Plan Sheets</span>
+            </div>
+            <h3 class="work-title">Site <em>Plan</em></h3>
+            <p class="work-description">
+              Approved site plan, sheet AS-101. Filed with the City of Coconut
+              Creek under Resolution 2018-207, signed by architect of record.
+            </p>
+            <div class="work-item-footer">
+              <div class="work-tags">
+                <span class="work-tag">Site Planning</span>
+              </div>
+              <span class="work-arrow">View <span aria-hidden="true">→</span></span>
+            </div>
+          </div>
+        </a>
+
+        <a class="work-item" href="#contact">
+          <div class="work-image image-reveal">
+            <span class="work-number">&mdash; 003</span>
+            <img src="images/willis-elevations.jpg" alt="Willis Lease building elevations drawing" loading="lazy" />
+          </div>
+          <div class="work-body">
+            <div class="work-meta">
+              <span>Sheet A-201</span>
+              <span>All Elevations</span>
+            </div>
+            <h3 class="work-title">Building <em>Elevations</em></h3>
+            <p class="work-description">
+              North, south, east, and west elevations with finish schedule,
+              material notes, and digital signature of the architect of record.
+            </p>
+            <div class="work-item-footer">
+              <div class="work-tags">
+                <span class="work-tag">Drawing Set</span>
+              </div>
+              <span class="work-arrow">View <span aria-hidden="true">→</span></span>
+            </div>
+          </div>
+        </a>
+
+        <a class="work-item" href="#contact">
+          <div class="work-image image-reveal">
+            <span class="work-number">&mdash; 004</span>
+            <img src="images/flora-aerial.jpg" alt="Flora Fine Foods aerial" loading="lazy" />
+          </div>
+          <div class="work-body">
+            <div class="work-meta">
+              <span>2021 &middot; Coral Springs, FL</span>
+              <span>75,000 SF</span>
+            </div>
+            <h3 class="work-title">Flora Fine Foods <em>HQ</em></h3>
+            <p class="work-description">
+              Class-A headquarters, distribution center, and Italian marketplace
+              on Sample Road. Architect of record.
+            </p>
+            <div class="work-item-footer">
+              <div class="work-tags">
+                <span class="work-tag">Mixed-Use</span>
+                <span class="work-tag">Headquarters</span>
+              </div>
+              <span class="work-arrow">View <span aria-hidden="true">→</span></span>
+            </div>
+          </div>
+        </a>
+
+        <a class="work-item" href="#contact">
+          <div class="work-image image-reveal">
+            <span class="work-number">&mdash; 005</span>
+            <img src="images/flora-exterior.jpg" alt="Flora Fine Foods loading dock exterior" loading="lazy" />
+          </div>
+          <div class="work-body">
+            <div class="work-meta">
+              <span>2021 &middot; Coral Springs, FL</span>
+              <span>Distribution Wing</span>
+            </div>
+            <h3 class="work-title">Flora <em>Distribution Wing</em></h3>
+            <p class="work-description">
+              The distribution elevation of the Flora campus &mdash; loading
+              docks, trailer bays, and the working edge of the facility.
+            </p>
+            <div class="work-item-footer">
+              <div class="work-tags">
+                <span class="work-tag">Industrial</span>
+                <span class="work-tag">Distribution</span>
+              </div>
+              <span class="work-arrow">View <span aria-hidden="true">→</span></span>
+            </div>
+          </div>
+        </a>
+
+        <a class="work-item" href="#contact">
+          <div class="work-image image-reveal">
+            <span class="work-number">&mdash; 006</span>
+            <img src="images/willis-floorplan.jpg" alt="Willis Lease building floor plan" loading="lazy" />
+          </div>
+          <div class="work-body">
+            <div class="work-meta">
+              <span>Sheet A-101</span>
+              <span>Floor Plan</span>
+            </div>
+            <h3 class="work-title">Floor <em>Plan</em></h3>
+            <p class="work-description">
+              Preliminary floor plan for the Willis Lease expansion. Filed with
+              the City of Coconut Creek planning department.
+            </p>
+            <div class="work-item-footer">
+              <div class="work-tags">
+                <span class="work-tag">Drawing Set</span>
+              </div>
+              <span class="work-arrow">View <span aria-hidden="true">→</span></span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== DISCIPLINES ===== -->
+  <section class="disciplines" id="disciplines">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="label">Disciplines &mdash; 04</span>
+        <h2 class="section-title">What we <em>do</em>.</h2>
+      </div>
+
+      <div class="disciplines-grid">
+        <div class="discipline reveal">
+          <span class="discipline-number">D 01</span>
+          <div class="discipline-body">
+            <h3>Architectural <em>Design</em></h3>
+            <p>Full architectural services from schematic design through construction administration.</p>
+            <div class="discipline-tags">
+              <span class="discipline-tag">Commercial</span>
+              <span class="discipline-tag">Industrial</span>
+              <span class="discipline-tag">Aviation</span>
+              <span class="discipline-tag">Mixed-Use</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="discipline reveal">
+          <span class="discipline-number">D 02</span>
+          <div class="discipline-body">
+            <h3>Site <em>Planning</em></h3>
+            <p>Master planning, zoning analysis, and site plan design &mdash; shepherded through municipal review.</p>
+            <div class="discipline-tags">
+              <span class="discipline-tag">Master Plans</span>
+              <span class="discipline-tag">Zoning</span>
+              <span class="discipline-tag">Entitlements</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="discipline reveal">
+          <span class="discipline-number">D 03</span>
+          <div class="discipline-body">
+            <h3>Permitting <em>&amp; Review</em></h3>
+            <p>Two decades of relationships with Broward building departments. We know the reviewers, the process, and the path to approval.</p>
+            <div class="discipline-tags">
+              <span class="discipline-tag">Coconut Creek</span>
+              <span class="discipline-tag">Coral Springs</span>
+              <span class="discipline-tag">Broward</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="discipline reveal">
+          <span class="discipline-number">D 04</span>
+          <div class="discipline-body">
+            <h3>Development <em>Consulting</em></h3>
+            <p>Early-stage feasibility, pro-forma-aware design, and partnership with developers on acquisition and entitlement decisions.</p>
+            <div class="discipline-tags">
+              <span class="discipline-tag">Feasibility</span>
+              <span class="discipline-tag">Due Diligence</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="discipline reveal">
+          <span class="discipline-number">D 05</span>
+          <div class="discipline-body">
+            <h3>Interior <em>Architecture</em></h3>
+            <p>Interior space planning and architectural detailing for office, distribution, retail, and medical fit-outs.</p>
+            <div class="discipline-tags">
+              <span class="discipline-tag">Office Fit-Out</span>
+              <span class="discipline-tag">Retail</span>
+              <span class="discipline-tag">Medical</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROCESS ===== -->
+  <section class="process" id="process">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="label">Methodology &mdash; 05</span>
+        <h2 class="section-title">How we <em>work</em>.</h2>
+      </div>
+
+      <div class="process-grid">
+        <div class="process-step reveal">
+          <span class="process-number">M 01</span>
+          <h3>Discover <em>the site</em></h3>
+          <p>We visit in person, review entitlements, study the surrounding fabric, and listen to what you need the building to do.</p>
+        </div>
+        <div class="process-step reveal">
+          <span class="process-number">M 02</span>
+          <h3>Draw, test, <em>refine</em></h3>
+          <p>Schematic design, concept imagery, and early coordination with civil and structural consultants. We rule out what does not work.</p>
+        </div>
+        <div class="process-step reveal">
+          <span class="process-number">M 03</span>
+          <h3>Document <em>the build</em></h3>
+          <p>Construction documents coordinated with engineers, specifications, and submittal packages prepared for municipal review.</p>
+        </div>
+        <div class="process-step reveal">
+          <span class="process-number">M 04</span>
+          <h3>Administer <em>construction</em></h3>
+          <p>Field visits, RFI responses, shop drawing review, and punch-list walkthroughs until the work meets the drawings.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CREDENTIALS ===== -->
+  <section class="credentials" id="credentials">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="label">Record &mdash; 06</span>
+        <h2 class="section-title">Registered. <em>Proven</em>.</h2>
+      </div>
+
+      <div class="creds-grid">
+        <div class="cred reveal">
+          <span class="cred-key">Incorporation</span>
+          <span class="cred-value">Active since 29 April 2002</span>
+          <span class="cred-detail">FL Sunbiz #P02000048951 &middot; <a href="https://search.sunbiz.org/" target="_blank" rel="noopener">search.sunbiz.org</a></span>
+        </div>
+        <div class="cred reveal">
+          <span class="cred-key">Public Record</span>
+          <span class="cred-value">Agent of Record, Coconut Creek</span>
+          <span class="cred-detail">Willis Lease Aviation Expansion &middot; City Resolution 2018-207</span>
+        </div>
+        <div class="cred reveal">
+          <span class="cred-key">Published</span>
+          <span class="cred-value">NAIOP South Florida</span>
+          <span class="cred-detail">Flora Fine Foods groundbreaking, 2021 &middot; <a href="https://www.naiopsfl.org/flora-fine-foods-orvino-wine-imports-break-ground-on-their-new-75-000-s-f-headquarters-distribution-and-italian-marketplace-in-coral-springs-fl" target="_blank" rel="noopener">naiopsfl.org</a></span>
+        </div>
+        <div class="cred reveal">
+          <span class="cred-key">Published</span>
+          <span class="cred-value">South Florida Business Journal</span>
+          <span class="cred-detail">Flora Fine Foods groundbreaking coverage &middot; January 2021</span>
+        </div>
+        <div class="cred reveal">
+          <span class="cred-key">Partnership</span>
+          <span class="cred-value">Butters Construction</span>
+          <span class="cred-detail">Design-build collaboration on multiple Broward projects</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <span class="label">Commissions &mdash; 07</span>
+      <h2 class="contact-headline">
+        Tell us about<br/><em>your project</em>.
+      </h2>
+
+      <div class="contact-grid">
+        <div class="contact-block reveal">
+          <h4>Direct</h4>
+          <a href="tel:+19548178171">954.817.8171</a>
+          <a href="mailto:ttdesigninc@aol.com">ttdesigninc@aol.com</a>
+        </div>
+        <div class="contact-block reveal">
+          <h4>Studio</h4>
+          <p>Broward County, FL<br/>By appointment</p>
+        </div>
+        <div class="contact-block reveal">
+          <h4>Principal</h4>
+          <p>Jerry Thomas<br/>Founder &amp; Principal</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="footer-lockup">
+            <div class="brand">
+              <svg class="brand-mark" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+                <rect x="1" y="1" width="30" height="30" stroke="currentColor" stroke-width="1" fill="none"/>
+                <path d="M5 5h10v2h-4v20h-2V7H5V5zm12 0h10v2h-4v20h-2V7h-4V5z" fill="currentColor"/>
+              </svg>
+              <span class="brand-text">
+                <span class="brand-name">T&amp;T Design</span>
+                <span class="brand-sub">Architecture &amp; Planning</span>
+              </span>
+            </div>
+            <p class="footer-tagline">A Florida architecture practice since 2002.</p>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Practice</h4>
+          <ul>
+            <li><a href="#work">Selected Work</a></li>
+            <li><a href="#practice">About</a></li>
+            <li><a href="#disciplines">Services</a></li>
+            <li><a href="#process">Process</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Studio</h4>
+          <ul>
+            <li>Broward County, FL</li>
+            <li><a href="tel:+19548178171">954.817.8171</a></li>
+            <li><a href="mailto:ttdesigninc@aol.com">ttdesigninc@aol.com</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Registered</h4>
+          <ul>
+            <li>FL Sunbiz #P02000048951</li>
+            <li>Active since April 2002</li>
+            <li>Broward County, Florida</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>&copy; 2026 T&amp;T Design &amp; Development Inc.</span>
+        <span>Broward County &mdash; Florida</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
